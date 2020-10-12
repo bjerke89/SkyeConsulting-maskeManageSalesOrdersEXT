@@ -1,0 +1,4 @@
+<!-- Use stable and unique id's!-->
+<core:FragmentDefinition xmlns:core='sap.ui.core' xmlns="sap.m">
+	<Button id="idCustomDispSalesOrdersBtn" text="{i18n>DispSalesOrdersBtn}" type="Transparent" press=".extension.customer.ManageSalesOrdersEXT1.CustomButtonController.onDispSalesOrders"/>
+</core:FragmentDefinition>

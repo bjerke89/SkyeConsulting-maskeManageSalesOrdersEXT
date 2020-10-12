@@ -1,0 +1,35 @@
+{
+	"fileName": "manifest",
+	"layer": "CUSTOMER_BASE",
+	"fileType": "appdescr_variant",
+	"reference": "cus.sd.salesorders.manage",
+	"id": "customer.ManageSalesOrdersEXT1",
+	"namespace": "apps/cus.sd.salesorders.manage/appVariants/customer.ManageSalesOrdersEXT1/",
+	"content": [
+		{
+			"changeType": "appdescr_app_setTitle",
+			"content": {},
+			"texts": {
+				"i18n": "i18n/i18n.properties"
+			}
+		},
+		{
+			"changeType": "appdescr_ui5_addNewModelEnhanceWith",
+			"content": {
+				"modelId": "i18n|sap.suite.ui.generic.template.ListReport|C_SalesOrderWl_F1873"
+			},
+			"texts": {
+				"i18n": "i18n/ListReport/C_SalesOrderWl_F1873/i18n.properties"
+			}
+		},
+		{
+			"changeType": "appdescr_ui5_addNewModelEnhanceWith",
+			"content": {
+				"modelId": "i18n|sap.suite.ui.generic.template.ObjectPage|C_SalesOrderWl_F1873"
+			},
+			"texts": {
+				"i18n": "i18n/ObjectPage/C_SalesOrderWl_F1873/i18n.properties"
+			}
+		}
+	]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<!-- IMPORTANT
+			This HTML file is meant for testing the application/component standalone, outside the Unified Shell.
+			Some integration functionality, personalization etc. will not be available when running standalone.
+	-->
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+<script id="sap-ui-script-placeholder"></script>
+
+<!-- this is loaded to enable ushell services -->
+<script src="../../test-resources/sap/ushell/bootstrap/sandbox.js" id="sap-ushell-bootstrap"></script>
+<script id="sap-ui-bootstrap" src="./../resources/sap-ui-core.js" data-sap-ui-libs="sap.m, sap.ushell, sap.me, sap.ui.table, sap.ui.layout, sap.ui.rta, sap.ui.dt, sap.viz, sap.ui.fl, sap.ui.comp, sap.suite.ui.generic.template" data-sap-ui-theme="sap_belize" data-sap-ui-xx-bindingsyntax="complex" data-sap-ui-compatversion="edge" data-sap-ui-flexibilityservices="[{&quot;applyConnector&quot;:&quot;PreviewConnector&quot;,&quot;custom&quot;:true,&quot;layers&quot;:[&quot;VENDOR&quot;]}]">
+</script>
+	<script src="https://webidecp-mx8ld6fstr.dispatcher.eu2.hana.ondemand.com/uiadaptationstable_sapwebide/client/v1.0.97_1598610157279/src/uiadaptation/util/AppVariantPreviewHelper.js"></script>
+
+	<script src="https://webidecp-mx8ld6fstr.dispatcher.eu2.hana.ondemand.com/uiadaptationstable_sapwebide/client/v1.0.97_1598610157279/src/adaptationproject/util/LoadChangesLrepPreview.js"></script>
+
+	<script>(function(){document.addEventListener('load', function(event){
+        	var element = event.target;
+            if( element.id === "OpaFrame"){
+               var opaFrameElementDocument = document.getElementById("OpaFrame").contentWindow.document;
+               var scriptObject = opaFrameElementDocument.createElement("script");
+               scriptObject.type = "text/javascript";
+               scriptObject.innerHTML = "sap.ui.getCore().loadLibrary('sap.ui.fl'); jQuery.getScript('https://webidecp-mx8ld6fstr.dispatcher.eu2.hana.ondemand.com/uiadaptationstable_sapwebide/client/v1.0.97_1598610157279/src/adaptationproject/util/LoadChangesLrepPreview.js')";
+               opaFrameElementDocument.head.appendChild(scriptObject);
+            }
+          },true);})()</script>
+
+	<script>window['manifest'] = {"customer.ManageSalesOrdersEXT1":{ "name": "cus.sd.salesorders.manage", "url": "/sap/bc/ui5_ui5/sap/sd_so_manages1/~218F959044B6517814ABDE8906C207FF~5", "manifest":{ "_version": "1.8.0", "sap.app":{ "_version": "1.2.0", "id": "customer.ManageSalesOrdersEXT1", "type": "application", "i18n": "i18n/i18n.properties", "applicationVersion":{ "version": "7.0.5" }, "title": "Manage Sales Orders Extension", "description": "Manage Sales Orders", "tags":{ "keywords":[] }, "ach": "SD-SLS", "dataSources":{ "mainService":{ "uri": "/sap/opu/odata/sap/SD_F1873_SO_WL_SRV/", "type": "OData", "settings":{ "annotations":[ "SD_F1873_SO_WL_ANNO_MDL", "localAnnotations" ], "localUri": "localService/metadata.xml" } }, "SD_F1873_SO_WL_ANNO_MDL":{ "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='SD_F1873_SO_WL_ANNO_MDL',Version='0001')/$value/", "type": "ODataAnnotation", "settings":{ "localUri": "localService/SD_F1873_SO_WL_ANNO_MDL.xml" } }, "localAnnotations":{ "uri": "annotations/annotations.xml", "type": "ODataAnnotation", "settings":{ "localUri": "annotations/annotations.xml" } } }, "offline":false, "resources": "resources.json", "sourceTemplate":{ "id": "copilot.intent", "version": "0.0.0" }, "crossNavigation":{ "inbounds":{}, "outbounds":{ "displaySalesOrder":{ "semanticObject": "SalesOrder", "action": "display" } } } }, "sap.ui":{ "_version": "1.2.0", "technology": "UI5", "icons":{ "icon": "sap-icon://Fiori2/F0021", "favIcon": "", "phone": "", "phone@2": "", "tablet": "", "tablet@2": "" }, "deviceTypes":{ "desktop":true, "tablet":true, "phone":false }, "supportedThemes":[ "sap_hcb", "sap_belize" ] }, "sap.ui5":{ "_version": "1.1.0", "resources":{ "js":[], "css":[] }, "dependencies":{ "minUI5Version": "1.65.5", "libs":{ "sap.ui.core":{}, "sap.ui.generic.app":{}, "sap.suite.ui.generic.template":{}, "sap.m":{ "lazy":false }, "sap.ui.comp":{ "lazy":false }, "sap.cus.sd.lib.processflow":{ "lazy":true }, "cus.sd.lib.worklist":{ "lazy":false } }, "components":{ "sap.cus.sd.lib.processflow.component.sales":{ "lazy":true } } }, "models":{ "i18n":{ "type": "sap.ui.model.resource.ResourceModel", "uri": "i18n/i18n.properties" }, "@i18n":{ "type": "sap.ui.model.resource.ResourceModel", "uri": "i18n/i18n.properties" }, "i18n|sap.suite.ui.generic.template.ListReport|C_SalesOrderWl_F1873":{ "type": "sap.ui.model.resource.ResourceModel", "uri": "i18n/ListReport/C_SalesOrderWl_F1873/i18n.properties", "settings":{ "enhanceWith":[{ "bundleUrl": "i18n/ListReport/C_SalesOrderWl_F1873/i18n.properties", "bundleUrlRelativeTo": "manifest" } ] } }, "i18n|sap.suite.ui.generic.template.ObjectPage|C_SalesOrderWl_F1873":{ "type": "sap.ui.model.resource.ResourceModel", "uri": "i18n/ObjectPage/C_SalesOrderWl_F1873/i18n.properties", "settings":{ "enhanceWith":[{ "bundleUrl": "i18n/ObjectPage/C_SalesOrderWl_F1873/i18n.properties", "bundleUrlRelativeTo": "manifest" } ] } }, "":{ "dataSource": "mainService", "preload":true, "settings":{ "defaultBindingMode": "TwoWay", "defaultCountMode": "Inline", "refreshAfterChange":false, "metadataUrlParams":{ "sap-value-list": "none" } } } }, "extends":{ "extensions":{ "sap.ui.viewExtensions":{ "sap.suite.ui.generic.template.ListReport.view.ListReport":{ "SmartFilterBarControlConfigurationExtension|C_SalesOrderWl_F1873":{ "className": "sap.ui.core.Fragment", "fragmentName": "cus.sd.salesorders.manage.ext.fragments.CustomFilter", "type": "XML" }, "ResponsiveTableColumnsExtension|C_SalesOrderWl_F1873":{ "className": "sap.ui.core.Fragment", "fragmentName": "cus.sd.salesorders.manage.ext.fragments.StatusTableColumn", "type": "XML" }, "ResponsiveTableCellsExtension|C_SalesOrderWl_F1873":{ "className": "sap.ui.core.Fragment", "fragmentName": "cus.sd.salesorders.manage.ext.fragments.StatusTableCells", "type": "XML" } } }, "sap.ui.controllerExtensions":{ "sap.suite.ui.generic.template.ListReport.view.ListReport":{ "controllerName": "cus.sd.salesorders.manage.ext.controllers.CustomLogic", "sap.ui.generic.app":{ "C_SalesOrderWl_F1873":{ "EntitySet": "C_SalesOrderWl_F1873", "Actions":{ "create":{ "id": "CreateSalesOrder", "text": "Create Sales Order - VA01", "press": "onPressCreate" }, "rejectAllItems":{ "id": "rejectAllItems", "text": "Reject All Items", "press": "onRejectAllItems", "requiresSelection": "true" }, "setDeliveryBlock":{ "id": "setDeliveryBlock", "text": "Set Delivery Block", "press": "onSetDeliveryBlock", "requiresSelection": "true" }, "removeDeliveryBlock":{ "id": "removeDeliveryBlock", "text": "Remove Delivery Block", "press": "onRemoveDeliveryBlock", "requiresSelection": "true" }, "setBillingBlock":{ "id": "setBillingBlock", "text": "Set Billing Block", "press": "onSetBillingBlock", "requiresSelection": "true" }, "removeBillingBlock":{ "id": "removeBillingBlock", "text": "Remove Billing Block", "press": "onRemoveBillingBlock", "requiresSelection": "true" } } } } } } } }, "contentDensities":{ "compact":true, "cozy":true }, "componentName": "cus.sd.salesorders.manage", "appVariantId": "customer.ManageSalesOrdersEXT1", "appVariantIdHierarchy":[{ "appVariantId": "cus.sd.salesorders.manage.Component", "layer": "VENDOR", "version": "7.0.5" } ] }, "sap.ui.generic.app":{ "_version": "1.2.0", "pages":[{ "entitySet": "C_SalesOrderWl_F1873", "component":{ "name": "sap.suite.ui.generic.template.ListReport", "list":true, "settings":{ "multiSelect":true } }, "pages":[{ "entitySet": "C_SalesOrderWl_F1873", "component":{ "name": "sap.suite.ui.generic.template.ObjectPage" }, "navigation":{ "display":{ "path": "sap.app.crossNavigation.outbounds", "target": "displaySalesOrder" } } } ] } ] }, "sap.fiori":{ "_version": "1.1.0", "registrationIds":[ "F1873" ], "archeType": "transactional" }, "sap.platform.hcp":{ "_version": "1.2.0", "uri": "" }, "sap.copilot":{ "_version": "1.0.0", "digitalAssistant":{ "intentDefinition":{ "ManageSalesOrdersSkill":{ "uri": "/copilot/ManageSalesOrdersSkill.xml", "dataSources":[ "mainService" ], "i18n": "/copilot/i18n/i18n.properties" } } } }, "sap.platform.abap":{ "uri": "/sap/bc/ui5_ui5/sap/sd_so_manages1" } }, "self":{ "name": "cus.sd.salesorders.manage", "url": "/sap/bc/ui5_ui5/sap/sd_so_manages1/~218F959044B6517814ABDE8906C207FF~5" }, "asyncHints":{ "libs":[{ "name": "sap.ui.core" },{ "name": "sap.suite.ui.commons", "lazy":true },{ "name": "cus.sd.lib.worklist", "url":{ "url": "/sap/bc/ui5_ui5/sap/sd_reuse_wkls1/~16961BAD5D9CEDD57BD259DE0C69915B~5", "final":true } },{ "name": "sap.ui.layout" },{ "name": "sap.m" },{ "name": "sap.cus.sd.lib.processflow", "url":{ "url": "/sap/bc/ui5_ui5/sap/sd_reuse_pfs1/~053AA2C7BA8561595CE7D031031F8FBD~5", "final":true }, "lazy":true },{ "name": "sap.ui.comp" },{ "name": "sap.ushell", "lazy":true },{ "name": "sap.suite.ui.generic.template" },{ "name": "sap.ui.generic.app" },{ "name": "sap.ui.fl" } ], "cacheTokens":{ "dataSources":{ "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='SD_F1873_SO_WL_ANNO_MDL',Version='0001')/$value/": "20201008214712", "/sap/opu/odata/sap/SD_F1873_SO_WL_SRV/": "20201008214712", "/sap/opu/odata/sap/SD_SO_PROCFLOW_SRV/": "20201008224153" } }, "requests":[{ "name": "sap.ui.fl.changes", "url": "/sap/bc/lrep/flex/data/~uOiMr2pKFQwQhvepGeJMgZyu4q4=~/cus.sd.salesorders.manage.Component?version=7.0.5&upToLayerType=PARTNER", "reference": "cus.sd.salesorders.manage.Component", "cachebusterToken": "uOiMr2pKFQwQhvepGeJMgZyu4q4=" } ] } }}</script>
+
+<!-- Change loading will be injected -->
+<script>
+    document.title = "Manage Sales Orders Extension";
+	//Application launch configuration
+	sap.ui.getCore().attachInitEvent(function() {
+			var sVariantID = "customer.ManageSalesOrdersEXT1", sLayer = "CUSTOMER_BASE", oComponent, oComponentConfig, sComponentName = "cus.sd.salesorders.manage", oMergedManifest = window['manifest'];
+		    if(window['manifest']){
+				//if MergedDescriptor is available from app previre service
+				console.log("App variant running on merged manifest from backend.");
+				appVariantPreview.mergedDescriptorAppPreview(oMergedManifest, sVariantID, sLayer).then(function(oShell){
+					oShell.placeAt("content");
+				});
+			}else{
+				//fallback mechanism
+				console.log("Merged descriptor could not be fetched from backend, falling back to non-merged execution");
+				appVariantPreview.fallbackAppVariantPreview(sComponentName, sVariantID, sLayer, window["isInternal"]).then(function(oShell){
+					oShell.placeAt("content");
+				});
+			}
+		});
+</script>
+</head>
+
+<!-- UI Content -->
+<body class="sapUiBody" id="content" role="application">
+</body>
+
+</html>
