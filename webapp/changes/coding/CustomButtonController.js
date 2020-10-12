@@ -12,7 +12,7 @@ sap.ui.define([
 		return ControllerExtension.extend("customer.ManageSalesOrdersEXT1.CustomButtonController", {
 			
 			
-			//Navigate to va01 - create sales order without params
+			//Navigate to va01 - create sales order without parameters
 			onCreateSalesOrder: function (oEvent) {
 				var oCrossAppNavigator = sap.ushell.Container.getService("CrossApplicationNavigation");
 				
